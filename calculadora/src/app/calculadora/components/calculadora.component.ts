@@ -28,7 +28,7 @@ export class CalculadoraComponent implements OnInit {
     this.operacao = null;
   }
 
-  adicionaNumero(n: string): void {
+  adicionarNumero(n: string): void {
     if(this.operacao === null) {
       this.n1 = this.concatenarNumero(this.n1, n);
     } else {
@@ -51,7 +51,7 @@ export class CalculadoraComponent implements OnInit {
     return nAtual + nConcat;
   }
 
-  definiOperacao(operacao: string): void {
+  definirOperacao(operacao: string): void {
     if (this.operacao === null) {
       this.operacao = operacao;
       return;
